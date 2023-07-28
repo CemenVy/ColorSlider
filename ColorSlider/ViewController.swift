@@ -14,26 +14,23 @@ class ViewController: UIViewController {
     @IBOutlet var greenValueLabel: UILabel!
     @IBOutlet var blueValueLAbel: UILabel!
     
-    private var redValueColor = 0.0
-    private var greenValueColor = 0.0
-    private var blueValueColor = 0.0
+    @IBOutlet var redSlider: UISlider!
+    @IBOutlet var greenSlider: UISlider!
+    @IBOutlet var blueSlider: UISlider!
+    
+    private var redValueColor = Double.random(in: 0.00...1.00)
+    private var greenValueColor = Double.random(in: 0.00...1.00)
+    private var blueValueColor = Double.random(in: 0.00...1.00)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resultWindowView.backgroundColor = UIColor(
-            red: redValueColor,
-            green: greenValueColor,
-            blue: blueValueColor,
-            alpha: 1.0
-        )
-        
-        resultWindowView.layer.cornerRadius = 15
+        setupResultWindow()
+        setupValuesSliders()
     }
 
-
-    @IBAction func redSlider(_ sender: UISlider) {
-        redValueColor = CGFloat(sender.value)
+    @IBAction func redSliderPull() {
+        redValueColor = CGFloat(redSlider.value)
         
         redValueLabel.text = String(format: "%.2f", redValueColor)
         resultWindowView.backgroundColor = UIColor(
@@ -44,8 +41,8 @@ class ViewController: UIViewController {
         )
     }
     
-    @IBAction func greenSlider(_ sender: UISlider) {
-        greenValueColor = CGFloat(sender.value)
+    @IBAction func greenSliderPull() {
+        greenValueColor = CGFloat(greenSlider.value)
         
         greenValueLabel.text = String(format: "%.2f", greenValueColor)
         resultWindowView.backgroundColor = UIColor(
@@ -56,8 +53,8 @@ class ViewController: UIViewController {
         )
     }
     
-    @IBAction func blueSlider(_ sender: UISlider) {
-        blueValueColor = CGFloat(sender.value)
+    @IBAction func blueSliderPull() {
+        blueValueColor = CGFloat(blueSlider.value)
         
         blueValueLAbel.text = String(format: "%.2f", blueValueColor)
         resultWindowView.backgroundColor = UIColor(
@@ -68,6 +65,27 @@ class ViewController: UIViewController {
         )
     }
     
+    private func setupResultWindow() {
+        resultWindowView.backgroundColor = UIColor(
+            red: redValueColor,
+            green: greenValueColor,
+            blue: blueValueColor,
+            alpha: 1.0
+        )
+        
+        resultWindowView.layer.cornerRadius = 15
+    }
+    
+    private func setupValuesSliders() {
+        redValueLabel.text = String(format: "%.2f", redValueColor)
+        greenValueLabel.text = String(format: "%.2f", greenValueColor)
+        blueValueLAbel.text = String(format: "%.2f", blueValueColor)
+        
+        redSlider.value = Float(redValueColor)
+        greenSlider.value = Float(greenValueColor)
+        blueSlider.value = Float(blueValueColor)
+        
+    }
     
 }
 
