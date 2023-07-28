@@ -9,10 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var resultWindowView: UIView!
+    @IBOutlet var redValueLabel: UILabel!
+    @IBOutlet var greenValueLabel: UILabel!
+    @IBOutlet var blueValueLAbel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
+
 
 
 }
