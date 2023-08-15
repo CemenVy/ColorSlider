@@ -163,10 +163,13 @@
                     <connections>
                         <outlet property="blueSlider" destination="l69-s4-pwe" id="piA-iJ-QxF"/>
                         <outlet property="blueValueLabel" destination="lzq-5T-RJo" id="hCe-9U-Pwa"/>
+                        <outlet property="blueValueTextField" destination="tGw-fc-HP0" id="esd-Up-FD8"/>
                         <outlet property="greenSlider" destination="0KH-K4-mxv" id="7ty-BX-mQw"/>
                         <outlet property="greenValueLabel" destination="GHY-wN-vqY" id="mwF-p8-yR2"/>
+                        <outlet property="greenValueTextField" destination="a93-AQ-weZ" id="pVb-7G-cXw"/>
                         <outlet property="redSlider" destination="yHw-Gd-O7T" id="EDt-d6-WCV"/>
                         <outlet property="redValueLabel" destination="OtF-Sf-f0u" id="H5c-NF-eHY"/>
+                        <outlet property="redValueTextField" destination="Zll-VH-9lu" id="0JH-EH-vUT"/>
                         <outlet property="resultWindowView" destination="WtS-r4-7aS" id="KEg-08-Nra"/>
                     </connections>
                 </viewController>
@@ -182,7 +185,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="n8D-9f-l7Z"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="x3T-tb-4dA">
@@ -221,11 +224,11 @@
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
