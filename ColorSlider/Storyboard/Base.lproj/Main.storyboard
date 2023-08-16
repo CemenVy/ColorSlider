@@ -72,10 +72,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Oo7-rI-15L">
-                                        <rect key="frame" x="90" y="1" width="147" height="116"/>
+                                        <rect key="frame" x="90" y="1" width="145" height="116"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yHw-Gd-O7T">
-                                                <rect key="frame" x="-2" y="0.0" width="151" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="149" height="31"/>
                                                 <color key="minimumTrackTintColor" red="0.92265683409999999" green="0.033870704109999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="maximumTrackTintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.25257759349999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,7 +84,7 @@
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0KH-K4-mxv">
-                                                <rect key="frame" x="-2" y="43" width="151" height="31"/>
+                                                <rect key="frame" x="-2" y="43" width="149" height="31"/>
                                                 <color key="minimumTrackTintColor" red="0.45827724289999999" green="0.92265683409999999" blue="0.3685209706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="maximumTrackTintColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="0.25257759353741499" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,7 +93,7 @@
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.78000000000000003" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="l69-s4-pwe">
-                                                <rect key="frame" x="-2" y="86" width="151" height="31"/>
+                                                <rect key="frame" x="-2" y="86" width="149" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <color key="maximumTrackTintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.25257759349999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -104,25 +104,25 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nRx-eZ-DLk">
-                                        <rect key="frame" x="245" y="0.0" width="43" height="118"/>
+                                        <rect key="frame" x="243" y="0.0" width="45" height="118"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zll-VH-9lu">
-                                                <rect key="frame" x="0.0" y="0.0" width="43" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zll-VH-9lu">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a93-AQ-weZ">
-                                                <rect key="frame" x="0.0" y="42" width="43" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="a93-AQ-weZ">
+                                                <rect key="frame" x="0.0" y="42" width="45" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGw-fc-HP0">
-                                                <rect key="frame" x="0.0" y="84" width="43" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="tGw-fc-HP0">
+                                                <rect key="frame" x="0.0" y="84" width="45" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="43" id="wYP-cd-ohS"/>
+                                                    <constraint firstAttribute="width" constant="45" id="wYP-cd-ohS"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -163,14 +163,14 @@
                     <connections>
                         <outlet property="blueSlider" destination="l69-s4-pwe" id="piA-iJ-QxF"/>
                         <outlet property="blueValueLabel" destination="lzq-5T-RJo" id="hCe-9U-Pwa"/>
-                        <outlet property="blueValueTextField" destination="tGw-fc-HP0" id="esd-Up-FD8"/>
                         <outlet property="greenSlider" destination="0KH-K4-mxv" id="7ty-BX-mQw"/>
                         <outlet property="greenValueLabel" destination="GHY-wN-vqY" id="mwF-p8-yR2"/>
-                        <outlet property="greenValueTextField" destination="a93-AQ-weZ" id="pVb-7G-cXw"/>
                         <outlet property="redSlider" destination="yHw-Gd-O7T" id="EDt-d6-WCV"/>
                         <outlet property="redValueLabel" destination="OtF-Sf-f0u" id="H5c-NF-eHY"/>
-                        <outlet property="redValueTextField" destination="Zll-VH-9lu" id="0JH-EH-vUT"/>
                         <outlet property="resultWindowView" destination="WtS-r4-7aS" id="KEg-08-Nra"/>
+                        <outletCollection property="textFields" destination="Zll-VH-9lu" collectionClass="NSMutableArray" id="M4F-ge-WtI"/>
+                        <outletCollection property="textFields" destination="a93-AQ-weZ" collectionClass="NSMutableArray" id="O3f-Hj-LeO"/>
+                        <outletCollection property="textFields" destination="tGw-fc-HP0" collectionClass="NSMutableArray" id="gEp-oT-Tre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
