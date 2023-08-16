@@ -22,17 +22,19 @@ final class SettingsViewController: UIViewController {
     
     @IBOutlet private var textFields: [UITextField]!
     
-    var colorStartScreen:UIColor!
+    // MARK: Public Properties
+    weak var delegate: SettingsViewControllerDelegate?
+    
+    var colorMainView:UIColor!
     
     // MARK: - View life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         
         resultWindowView.layer.cornerRadius = 15
+        
         updateSliderValue()
-        
         setupTextFields()
-        
     }
     
     // MARK: - IB Actions
@@ -52,6 +54,9 @@ final class SettingsViewController: UIViewController {
     }
     
     @IBAction func saveValueButtonTapped() {
+        view.endEditing(true)
+        guard let selectedColor = resultWindowView.backgroundColor else { return }
+        delegate?.setSettingsView(for: selectedColor)
         dismiss(animated: true)
     }
     
@@ -71,12 +76,18 @@ final class SettingsViewController: UIViewController {
         blueValueLabel.text = string(from: blueSlider)
     }
     
+    private func updateTextFieldsFromSliders() {
+        textFields[0].text = string(from: redSlider)
+        textFields[1].text = string(from: greenSlider)
+        textFields[2].text = string(from: blueSlider)
+    }
+    
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
     
     private func updateSliderValue() {
-        if let colors = colorStartScreen {
+        if let colors = colorMainView {
             var red: CGFloat = 0.0
             var green: CGFloat = 0.0
             var blue: CGFloat = 0.0
@@ -90,6 +101,7 @@ final class SettingsViewController: UIViewController {
         }
         updateValueLabel()
         updateColorView()
+        updateTextFieldsFromSliders()
     }
     
 }
@@ -123,21 +135,21 @@ extension SettingsViewController: UITextFieldDelegate {
         }
     }
     
-        
-        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            for textField in textFields {
-                textField.resignFirstResponder()
-            }
-            return true
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        for textField in textFields {
+            textField.resignFirstResponder()
         }
-        
-        func setupTextFields() {
-            for textField in textFields {
-                textField.delegate = self
-            }
+        return true
+    }
+    
+    func setupTextFields() {
+        for textField in textFields {
+            textField.delegate = self
         }
+    }
 }
-
+// MARK: - Float
 extension Float {
     func cgFloat() -> CGFloat {
         CGFloat(self)
