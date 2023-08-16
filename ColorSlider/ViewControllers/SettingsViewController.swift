@@ -37,6 +37,13 @@ final class SettingsViewController: UIViewController {
         setupTextFields()
     }
     
+    // MARK: - Touch Handling
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+        updateTextFieldsFromSliders()
+    }
+    
     // MARK: - IB Actions
     @IBAction func colorSliderValueChanged(_ sender: UISlider) {
         updateColorView()
@@ -103,8 +110,8 @@ final class SettingsViewController: UIViewController {
         updateColorView()
         updateTextFieldsFromSliders()
     }
-    
 }
+
 // MARK: - UITextFieldDelegate
 extension SettingsViewController: UITextFieldDelegate {
     
